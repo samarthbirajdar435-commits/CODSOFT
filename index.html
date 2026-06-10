@@ -2,18 +2,105 @@
 <html>
 <head>
     <title>Samarth Birajdar Portfolio</title>
+
     <style>
+
         body{
             font-family: Arial, sans-serif;
             margin:0;
             background:#f4f4f4;
+            scroll-behavior:smooth;
         }
 
         header{
             background:#1e3a8a;
-            color:rgb(204, 192, 192);
+            color:white;
             text-align:center;
+            padding:35px;
+        }
+
+        nav{
+            margin-top:20px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            color:lightblue;
+        }
+
+        .hero{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            gap:40px;
             padding:30px;
+            background:white;
+            margin:20px;
+            border-radius:10px;
+        }
+
+        .hero-content{
+            text-align:left;
+        }
+
+        .hero img{
+            width:220px;
+            height:220px;
+            border-radius:50%;
+            border:5px solid #1e3a8a;
+            object-fit:cover;
+        }
+
+        .hero h2{
+            color:#1e3a8a;
+        }
+
+        .github-btn{
+            display:inline-block;
+            margin:10px 10px 10px 0;
+            padding:10px 20px;
+            background:#24292e;
+            color:white;
+            text-decoration:none;
+            border-radius:5px;
+        }
+
+        .linkedin-btn{
+            display:inline-block;
+            margin:10px 10px 10px 0;
+            padding:10px 20px;
+            background:#0077b5;
+            color:white;
+            text-decoration:none;
+            border-radius:5px;
+        }
+
+        .resume-btn{
+            display:inline-block;
+            margin:10px 10px 10px 0;
+            padding:10px 20px;
+            background:#16a34a;
+            color:white;
+            text-decoration:none;
+            border-radius:5px;
+        }
+
+        .github-btn:hover{
+            background:black;
+        }
+
+        .linkedin-btn:hover{
+            background:#005582;
+        }
+
+        .resume-btn:hover{
+            background:#15803d;
         }
 
         section{
@@ -27,68 +114,144 @@
             color:#1e3a8a;
         }
 
+        ul li{
+            margin-bottom:8px;
+        }
+
         footer{
             background:#1e3a8a;
             color:white;
             text-align:center;
             padding:15px;
         }
+
     </style>
+
 </head>
 
 <body>
 
 <header>
+
     <h1>Samarth Birajdar</h1>
     <p>Web Development Intern</p>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
 </header>
 
-<section>
+<div class="hero">
+
+    <img src="photo.jpg.png" alt="Samarth Birajdar">
+
+    <div class="hero-content">
+
+        <h2>Hello, I'm Samarth</h2>
+
+        <p>
+            Computer Engineering Student interested in
+            Web Development and Technology.
+        </p>
+
+        <a href="https://github.com/samarthbirajdar435-commits/CODSOFT"
+           target="_blank"
+           class="github-btn">
+           GitHub
+        </a>
+
+        <a href="https://www.linkedin.com/in/samarth-birajdar-709638335"
+           target="_blank"
+           class="linkedin-btn">
+           LinkedIn
+        </a>
+
+        <a href="resume.pdf.pdf"
+           target="_blank"
+           class="resume-btn">
+           View Resume
+        </a>
+
+    </div>
+
+</div>
+
+<section id="about">
+
     <h2>About Me</h2>
+
     <p>
-        I am Samarth Birajdar, a Computer Engineering student with an interest in web development and technology. I enjoy learning new skills, participating in technical activities, and working on projects that help me gain practical experience.
+        I am Samarth Birajdar, a Computer Engineering student with an
+        interest in web development and technology. I enjoy learning
+        new skills and working on projects that help me gain practical
+        experience.
     </p>
+
 </section>
 
-<section>
+<section id="skills">
+
     <h2>Skills</h2>
+
     <ul>
         <li>HTML</li>
         <li>CSS</li>
         <li>Basic JavaScript</li>
         <li>GitHub</li>
         <li>C Programming</li>
-        <li>python</li>
-        <li>probleam solving</li>
-        <li>teamwork</li>
+        <li>Python</li>
+        <li>Problem Solving</li>
+        <li>Teamwork</li>
     </ul>
+
 </section>
 
-<section>
+<section id="projects">
+
     <h2>Projects</h2>
-    <p><b>Portfolio Website</b> - Personal portfolio created using HTML and CSS.</p>
-    <p><b>Landing Page</b> - Internship project (Upcoming).</p>
-    <p><b>Fire Detection Drone Project</b> - Academic project based on Jetson Orin for fire detection and monitoring.</p>
+
+    <p>
+        <b>Portfolio Website</b> -
+        Personal portfolio created using HTML and CSS.
+    </p>
+
+    <p>
+        <b>Landing Page</b> -
+        Internship project created during CodSoft Internship.
+    </p>
+
+    <p>
+        <b>problem statment</b> -
+        Academic project based on App-based solution to identify and solve disease in plants/crops
+    </p>
+
 </section>
 
-<section>
+<section id="contact">
+
     <h2>Contact</h2>
 
     <p>Email: samarthbirajdar435@gmail.com</p>
 
     <p>
         LinkedIn:
-        <a href="https://www.linkedin.com/in/samarth-birajdar-709638335" target="_blank">
-            My LinkedIn Profile
+        <a href="https://www.linkedin.com/in/samarth-birajdar-709638335"
+           target="_blank">
+           My LinkedIn Profile
         </a>
     </p>
 
     <p>
-    GitHub:
-    <a href="https://github.com/samarthbirajdar435" target="_blank">
-        My GitHub
-    </a>
-</p>
+        GitHub:
+        <a href="https://github.com/samarthbirajdar435"
+           target="_blank">
+           My GitHub
+        </a>
+    </p>
 
 </section>
 
